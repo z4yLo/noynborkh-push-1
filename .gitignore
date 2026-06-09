@@ -1,0 +1,11 @@
+*.mp4
+node_modules/
+.next/
+*.jpg
+*.JPG
+*.jpeg
+*.png
+*.PNG
+*.svg
+*.gif
+*.webp
