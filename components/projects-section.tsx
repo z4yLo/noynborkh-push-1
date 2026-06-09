@@ -5,19 +5,21 @@ import { useRef, useState } from "react"
 import { ArrowUpRight } from "lucide-react"
 import { ProjectGalleryModal } from "./ProjectGalleryModal"
 
+const CLOUDINARY = "https://res.cloudinary.com/dnf4kmkrx/image/upload"
+
 const projects = [
   {
     title: "Их наяд плаза",
     category: "Худалдаа ба үйлчилгээний барилга",
     year: "2023",
     description: "Дээд зэрэглэлийн худалдаа үйлчилгээний төвийн металл фасад ба бүтээцийн ган.",
-    image: "ih-nayd-pro.jpg",
+    image: `${CLOUDINARY}/ih-nayd-pro`,
     images: [
-      "ih-nayd-pro1.jpg",
-      "ih-nayd-pro2.jpg",
-      "ih-nayd-pro3.jpg",
-      "ih-nayd-pro4.jpg",
-      "ih-nayd-pro5.jpg",
+      `${CLOUDINARY}/ih-nayd-pro1`,
+      `${CLOUDINARY}/ih-nayd-pro2`,
+      `${CLOUDINARY}/ih-nayd-pro3`,
+      `${CLOUDINARY}/ih-nayd-pro4`,
+      `${CLOUDINARY}/ih-nayd-pro5`,
     ],
   },
   {
@@ -25,21 +27,27 @@ const projects = [
     category: "Уран сайхан ба бүтээлийн байгууламж",
     year: "2020",
     description: "HERO entertainment ийн гадаад ба дотоод ажилыг 100% хийж гүйцэтгэсэн.",
-    image: "hero.jpg",
-    images: ["Hero-pro.jpg", "Hero-pro2.jpg", "Hero-pro3.jpg", "Hero-pro4.jpg", "Hero-pro5.jpg"],
+    image: `${CLOUDINARY}/hero`,
+    images: [
+      `${CLOUDINARY}/Hero-pro`,
+      `${CLOUDINARY}/Hero-pro2`,
+      `${CLOUDINARY}/Hero-pro3`,
+      `${CLOUDINARY}/Hero-pro4`,
+      `${CLOUDINARY}/Hero-pro5`,
+    ],
   },
   {
     title: "Misheel Expo",
     category: "Барилгий материал ба гэр ахуйн барааны үзэсгэлэн худалдааний төв",
     year: "2022",
     description: "Cozzo home иин Misheel Expo үзэсгэлэнгийн гадаад фасадны металл бүтээцийн ажил.",
-    image: "misheel2.jpg",
+    image: `${CLOUDINARY}/misheel2`,
     images: [
-      "misheel-pro2.jpg",
-      "misheel-pro3.jpg",
-      "misheel-pro4.jpg",
-      "misheel-pro5.jpg",
-      "misheel-pro6.jpg",
+      `${CLOUDINARY}/misheel-pro2`,
+      `${CLOUDINARY}/misheel-pro3`,
+      `${CLOUDINARY}/misheel-pro4`,
+      `${CLOUDINARY}/misheel-pro5`,
+      `${CLOUDINARY}/misheel-pro6`,
     ],
   },
   {
@@ -47,13 +55,13 @@ const projects = [
     category: "Уран сайхан ба бүтээлийн байгууламж",
     year: "2022",
     description: "HERO entertainment ийн The Mongol Khan жүжгийн тайзны металл бүтээцийн ажил.",
-    image: "TheMongolKhan.jpg",
+    image: `${CLOUDINARY}/TheMongolKhan`,
     images: [
-      "TheMongolKhan.jpg",
-      "TheMongolKhan-2.jpg",
-      "TheMongolKhan-3.jpg",
-      "TheMongolKhan-4.jpg",
-      "TheMongolKhan-5.jpg",
+      `${CLOUDINARY}/TheMongolKhan`,
+      `${CLOUDINARY}/TheMongolKhan-2`,
+      `${CLOUDINARY}/TheMongolKhan-3`,
+      `${CLOUDINARY}/TheMongolKhan-4`,
+      `${CLOUDINARY}/TheMongolKhan-5`,
     ],
   },
 ]
@@ -106,7 +114,7 @@ export function ProjectsSection() {
               {/* Project Image */}
               <div className="relative aspect-[16/10] overflow-hidden">
 
-                {/* Pattern - доод давхарт */}
+                {/* Pattern */}
                 <div className="absolute inset-0 z-0 bg-gradient-to-br from-[#2B1B17] to-[#1B1412]">
                   <div
                     className="absolute inset-0 opacity-5"
@@ -121,7 +129,7 @@ export function ProjectsSection() {
                   </div>
                 </div>
 
-                {/* Зураг - дунд давхарт */}
+                {/* Зураг */}
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -130,7 +138,7 @@ export function ProjectsSection() {
                   className="z-10 object-cover transition-transform duration-500 group-hover:scale-105"
                 />
 
-                {/* Hover Overlay - дээд давхарт */}
+                {/* Hover Overlay */}
                 <div className="absolute inset-0 z-20 flex items-center justify-center bg-[#111111]/80 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <button
                     onClick={() => {
