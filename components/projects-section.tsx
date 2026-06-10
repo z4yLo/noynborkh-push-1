@@ -40,7 +40,7 @@ const projects = [
     title: "Misheel Expo",
     category: "Барилгий материал ба гэр ахуйн барааны үзэсгэлэн худалдааний төв",
     year: "2022",
-    description: "Cozzo home иин Misheel Expo үзэсгэлэнгийн гадаад фасадны металл бүтээцийн ажил.",
+    description: "Misheel Expo үзэсгэлэнгийн Cozzo home гэр ахуйн тавьлагийн дэлгүүрийн металл бүтэцийн ажил.",
     image: `${CLOUDINARY}/misheel2`,
     images: [
       `${CLOUDINARY}/misheel-pro2`,
