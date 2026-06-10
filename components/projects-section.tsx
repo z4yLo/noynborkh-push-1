@@ -29,11 +29,11 @@ const projects = [
     description: "HERO entertainment ийн гадаад ба дотоод ажилыг 100% хийж гүйцэтгэсэн.",
     image: `${CLOUDINARY}/hero`,
     images: [
-      `${CLOUDINARY}/Heropro1`,
-      `${CLOUDINARY}/Heropro2`,
-      `${CLOUDINARY}/Heropro3`,
-      `${CLOUDINARY}/Heropro4`,
-      `${CLOUDINARY}/Heropro5`,
+      `${CLOUDINARY}/https://res.cloudinary.com/dnf4kmkrx/image/upload/v1781009225/Heropro1.jpg`,
+      `${CLOUDINARY}/https://res.cloudinary.com/dnf4kmkrx/image/upload/v1781009339/Heropro2.jpg`,
+      `${CLOUDINARY}/https://res.cloudinary.com/dnf4kmkrx/image/upload/v1781009328/Heropro3.jpg`,
+      `${CLOUDINARY}/https://res.cloudinary.com/dnf4kmkrx/image/upload/v1781009379/Heropro4.jpg`,
+      `${CLOUDINARY}/https://res.cloudinary.com/dnf4kmkrx/image/upload/v1781009575/Heropro5.png`,
     ],
   },
   {
