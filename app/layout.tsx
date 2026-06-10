@@ -14,21 +14,8 @@ export const metadata: Metadata = {
   keywords: ['ган боловсруулалт', 'металл боловсруулалт', 'аж үйлдвэрийн барилга', 'Монгол', 'металл бүтээц', 'Ноён Борх'],
   generator: 'v0.app',
   icons: {
-    icon: [
-      {
-        url: 'noynborkh.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/blob:https://gemini.google.com/bb849cf7-5fa5-483f-8989-e0b915887692',
-        type: 'blob:https://gemini.google.com/bb849cf7-5fa5-483f-8989-e0b915887692',
-      },
-    ],
-    apple: '/ blob:https://gemini.google.com/bb849cf7-5fa5-483f-8989-e0b915887692',
+    icon: 'https://res.cloudinary.com/dnf4kmkrx/image/upload/noynborkh_jejga4',
+    apple: 'https://res.cloudinary.com/dnf4kmkrx/image/upload/noynborkh_jejga4',
   },
 }
 

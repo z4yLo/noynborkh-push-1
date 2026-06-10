@@ -40,10 +40,11 @@ export function Footer() {
                 {/* Logo Image */}
                 <div className="flex h-16 w-16 items-center justify-center">
                   <Image
-                    src="/noynborkh.png"
+                    src="https://res.cloudinary.com/dnf4kmkrx/image/upload/noynborkh_jejga4"
                     alt="Ноён Борх ХХК лого"
                     width={64}
                     height={64}
+                    unoptimized
                     className="object-contain"
                   />
                 </div>

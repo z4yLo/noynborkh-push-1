@@ -5,7 +5,7 @@ import Link from "next/link"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 
-  const YOUTUBE_URL = "https://www.youtube.com/watch?v=tg8MFB48Pew"
+const YOUTUBE_URL = "https://www.youtube.com/watch?v=tg8MFB48Pew"
 
 const navLinks = [
   { href: "#about", label: "Бидний тухай" },
@@ -42,7 +42,7 @@ export function Navigation() {
           <Link href="/" className="group flex items-center gap-4">
             <div className="relative">
               <div className="flex h-10 w-10 items-center justify-center rounded border border-[#C8A46B]/30 bg-gradient-to-br from-[#2B1B17] to-[#1B1412]">
-                <img src="noynborkh.png" alt="Logo" />
+                <img src="https://res.cloudinary.com/dnf4kmkrx/image/upload/noynborkh_jejga4" alt="Logo" />
               </div>
               <div className="absolute -inset-1 rounded bg-[#C8A46B]/10 opacity-0 blur transition-opacity group-hover:opacity-100" />
             </div>
