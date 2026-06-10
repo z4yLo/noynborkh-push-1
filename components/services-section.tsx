@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Building2, Hammer, HardHat, Layers } from "lucide-react"
+import { Building2, Hammer, HardHat, House, Layers } from "lucide-react"
 
 const services = [
   {
@@ -25,10 +25,10 @@ const services = [
       "Суурийн ажлаас эцсийн хүртэлх бүрэн хэмжээний аж үйлдвэрийн барилга угсралтын үйлчилгээ.",
   },
   {
-    icon: Layers,
-    title: "Металл фасадны шийдэл",
+    icon: House,
+    title: "Гэр ахуйн уран тавилга ",
     description:
-      "Гоо зүй, бат бөх, гүйцэтгэлийг хослуулсан архитектурын металл хальс болон фасадны систем.",
+      "13-р зууны Монгол гэрт амьдарч буй мэдрэмж төрүүлэх уран тавилга.",
   },
 ]
 

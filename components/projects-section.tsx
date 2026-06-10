@@ -26,7 +26,7 @@ const projects = [
     title: "HERO entertainment",
     category: "Уран сайхан ба бүтээлийн байгууламж",
     year: "2020",
-    description: "HERO entertainment ийн гадаад ба дотоод ажилыг 100% хийж гүйцэтгэсэн.",
+    description: "HERO entertainment ийн дотоод интерьер ажилыг 100% хийж гүйцэтгэсэн.",
     image: `${CLOUDINARY}/hero`,
     images: [
       `${CLOUDINARY}/Heropro1`,
