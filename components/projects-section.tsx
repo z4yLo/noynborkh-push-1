@@ -29,11 +29,11 @@ const projects = [
     description: "HERO entertainment ийн гадаад ба дотоод ажилыг 100% хийж гүйцэтгэсэн.",
     image: `${CLOUDINARY}/hero`,
     images: [
-      `${CLOUDINARY}/Hero-pro1`,
-      `${CLOUDINARY}/Hero-pro2`,
-      `${CLOUDINARY}/Hero-pro3`,
-      `${CLOUDINARY}/Hero-pro4`,
-      `${CLOUDINARY}/Hero-pro5`,
+      `${CLOUDINARY}/Heropro1`,
+      `${CLOUDINARY}/Heropro2`,
+      `${CLOUDINARY}/Heropro3`,
+      `${CLOUDINARY}/Heropro4`,
+      `${CLOUDINARY}/Heropro5`,
     ],
   },
   {
