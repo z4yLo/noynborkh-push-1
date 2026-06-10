@@ -57,7 +57,7 @@ const projects = [
     description: "HERO entertainment ийн The Mongol Khan жүжгийн тайзны металл бүтээцийн ажил.",
     image: `${CLOUDINARY}/TheMongolKhan`,
     images: [
-      `${CLOUDINARY}/TheMongolKhan`,
+      `${CLOUDINARY}/TheMongolKhan-1`,
       `${CLOUDINARY}/TheMongolKhan-2`,
       `${CLOUDINARY}/TheMongolKhan-3`,
       `${CLOUDINARY}/TheMongolKhan-4`,
