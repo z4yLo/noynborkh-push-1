@@ -77,9 +77,10 @@ export function AboutSection() {
 
               {/* Image */}
               <Image
-                src="/Gerchilgee-Borkh.jpg"
+                src="https://res.cloudinary.com/dnf4kmkrx/image/upload/Gerchilgee-Borkh"
                 alt="Ноён Борх үйлдвэр"
                 fill
+                unoptimized
                 className="object-cover"
               />
             </div>
