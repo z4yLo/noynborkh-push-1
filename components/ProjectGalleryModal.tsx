@@ -23,13 +23,23 @@ export function ProjectGalleryModal({
   setActiveIndex,
   onClose,
 }: ProjectGalleryModalProps) {
+  const handlePrev = () => {
+    if (!project) return
+    setActiveIndex((activeIndex - 1 + project.images.length) % project.images.length)
+  }
+
+  const handleNext = () => {
+    if (!project) return
+    setActiveIndex((activeIndex + 1) % project.images.length)
+  }
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!project) return
       if (e.key === "ArrowLeft") {
-        setActiveIndex((i) => (i - 1 + project.images.length) % project.images.length)
+        setActiveIndex((activeIndex - 1 + project.images.length) % project.images.length)
       } else if (e.key === "ArrowRight") {
-        setActiveIndex((i) => (i + 1) % project.images.length)
+        setActiveIndex((activeIndex + 1) % project.images.length)
       } else if (e.key === "Escape") {
         onClose()
       }
@@ -44,7 +54,7 @@ export function ProjectGalleryModal({
       document.body.style.overflow = ""
       window.removeEventListener("keydown", handleKeyDown)
     }
-  }, [project, onClose, setActiveIndex])
+  }, [project, activeIndex, onClose, setActiveIndex])
 
   return (
     <AnimatePresence>
@@ -95,9 +105,7 @@ export function ProjectGalleryModal({
 
               {/* Prev Button */}
               <button
-                onClick={() =>
-                  setActiveIndex((i) => (i - 1 + project.images.length) % project.images.length)
-                }
+                onClick={handlePrev}
                 className="absolute left-4 top-1/2 -translate-y-1/2 border border-[#2B1B17] bg-[#111111]/80 p-3 text-[#E8D9B5]/60 transition-all hover:border-[#C8A46B]/40 hover:text-[#C8A46B]"
               >
                 <ChevronLeft className="h-5 w-5" />
@@ -105,7 +113,7 @@ export function ProjectGalleryModal({
 
               {/* Next Button */}
               <button
-                onClick={() => setActiveIndex((i) => (i + 1) % project.images.length)}
+                onClick={handleNext}
                 className="absolute right-4 top-1/2 -translate-y-1/2 border border-[#2B1B17] bg-[#111111]/80 p-3 text-[#E8D9B5]/60 transition-all hover:border-[#C8A46B]/40 hover:text-[#C8A46B]"
               >
                 <ChevronRight className="h-5 w-5" />
