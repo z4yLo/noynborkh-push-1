@@ -114,7 +114,7 @@ export function WhyUsSection() {
             инженеринг, давтагдашгүй ур чадвараар хэрэгжүүлэхийг ярилцъя.
           </p>
           <a
-            href="#contact"
+            href="https://www.facebook.com/profile.php?id=61590945140872"
             className="inline-flex items-center gap-2 bg-[#C8A46B] px-8 py-4 text-sm font-medium uppercase tracking-wider text-[#111111] transition-all hover:bg-[#E8D9B5]"
           >
             Үнэгүй үнийн санал авах
