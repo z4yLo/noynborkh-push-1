@@ -116,11 +116,11 @@ export function ContactSection() {
                   className="w-full border border-[#2B1B17] bg-[#111111] px-4 py-3 text-[#E8D9B5] transition-colors focus:border-[#C8A46B]/50 focus:outline-none"
                 >
                   <option value="">Үйлчилгээ сонгох</option>
-                  <option value="steel-structures">Ган бүтээц</option>
-                  <option value="metal-fabrication">Тусгай металл боловсруулалт</option>
-                  <option value="industrial-construction">Аж үйлдвэрийн барилга</option>
-                  <option value="facade-solutions">Металл фасадны шийдэл</option>
-                  <option value="other">Бусад</option>
+                  <option value="steel-structures">Барилгын төмөр хийц</option>
+                  <option value="metal-furniture">Металл тавилга үйлдвэрлэл</option>
+                  <option value="stage-systems">Тайз, арга хэмжээний хийц</option>
+                  <option value="decorative-metal">Чимэглэлийн металл хийц</option>
+                  <option value="other">Бусад үйлчилгээ</option>
                 </select>
               </div>
 
@@ -146,13 +146,14 @@ export function ContactSection() {
             </form>
           </motion.div>
 
-          {/* Contact Info */}
+          {/* Contact Info + Map */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
             className="self-start"
           >
+            {/* Info Cards */}
             <div className="grid gap-4 sm:grid-cols-2">
               {contactInfo.map((info, index) => (
                 <motion.div
@@ -174,6 +175,31 @@ export function ContactSection() {
                 </motion.div>
               ))}
             </div>
+
+            {/* Map */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              className="relative mt-4 overflow-hidden border border-[#2B1B17]"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d171249.31296027614!2d106.77225755!3d47.90717805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d9692be44af8b23%3A0x1ce8af3f9b81b6f1!2sUlaanbaatar%2C%20Mongolia!5e0!3m2!1sen!2s!4v1718000000000"
+                width="100%"
+                height="220"
+                style={{ border: 0, display: "block" }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Байршлын газрын зураг"
+                className="grayscale invert hue-rotate-180 brightness-75 contrast-110 saturate-50"
+              />
+              <div className="absolute bottom-0 left-0 right-0 flex items-center gap-2 border-t border-[#2B1B17] bg-[#0D0D0D]/85 px-3 py-1.5">
+                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#C8A46B]" />
+                <span className="text-[11px] tracking-wide text-[#E8D9B5]/50">
+                  Улаанбаатар, Монгол Улс
+                </span>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </div>

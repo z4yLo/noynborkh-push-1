@@ -12,7 +12,7 @@ const projects = [
     title: "Их наяд плаза",
     category: "Худалдаа ба үйлчилгээний барилга",
     year: "2023",
-    description: "Дээд зэрэглэлийн худалдаа үйлчилгээний төвийн металл фасад ба бүтээцийн ган.",
+    description: "Дээд зэрэглэлийн худалдаа үйлчилгээний төвийн ARVAI STORE ба POLO RALPH LAUREN гадна бүтэцийн ажил.",
     image: `${CLOUDINARY}/ih-nayd-pro`,
     images: [
       `${CLOUDINARY}/ih-nayd-pro1`,
@@ -38,7 +38,7 @@ const projects = [
   },
   {
     title: "Misheel Expo",
-    category: "Барилгий материал ба гэр ахуйн барааны үзэсгэлэн худалдааний төв",
+    category: "Барилгийн материал ба гэр ахуйн барааны үзэсгэлэн худалдааний төв",
     year: "2022",
     description: "Misheel Expo үзэсгэлэнгийн Cozzo home гэр ахуйн тавьлагийн дэлгүүрийн металл бүтэцийн ажил.",
     image: `${CLOUDINARY}/misheel2`,
@@ -54,7 +54,7 @@ const projects = [
     title: "The Mongol Khan жүжиг",
     category: "Уран сайхан ба бүтээлийн байгууламж",
     year: "2022",
-    description: "HERO entertainment ийн The Mongol Khan жүжгийн тайзны металл бүтээцийн ажил.",
+    description: "HERO entertainment ийн The Mongol Khan жүжгийн тайзны металл бүтэцийн ажил.",
     image: `${CLOUDINARY}/TheMongolKhan`,
     images: [
       `${CLOUDINARY}/TheMongolKhan-1`,
