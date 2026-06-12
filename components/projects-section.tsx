@@ -5,7 +5,7 @@ import { useRef, useState } from "react"
 import { ArrowUpRight } from "lucide-react"
 import { ProjectGalleryModal } from "./ProjectGalleryModal"
 
-const CLOUDINARY = "https://res.cloudinary.com/dnf4kmkrx/image/upload"
+const CLOUDINARY = "https://res.cloudinary.com/dnf4kmkrx/image/upload" 
 
 const projects = [
   {
@@ -20,6 +20,11 @@ const projects = [
       `${CLOUDINARY}/ih-nayd-pro3`,
       `${CLOUDINARY}/ih-nayd-pro4`,
       `${CLOUDINARY}/ih-nayd-pro5`,
+      `${CLOUDINARY}/ih-nayd-pro6`,
+      `${CLOUDINARY}/ih-nayd-pro7`,
+      `${CLOUDINARY}/ih-nayd-pro8`,
+      `${CLOUDINARY}/ih-nayd-pro9`,
+      `${CLOUDINARY}/ih-nayd-pro10`,
     ],
   },
   {
@@ -34,6 +39,11 @@ const projects = [
       `${CLOUDINARY}/Heropro3`,
       `${CLOUDINARY}/Heropro4`,
       `${CLOUDINARY}/Heropro5`,
+      `${CLOUDINARY}/Heropro6`,
+      `${CLOUDINARY}/Heropro7`,
+      `${CLOUDINARY}/Heropro8`,
+      `${CLOUDINARY}/Heropro9`,
+      `${CLOUDINARY}/Heropro10`,
     ],
   },
   {
@@ -48,6 +58,11 @@ const projects = [
       `${CLOUDINARY}/misheel-pro4`,
       `${CLOUDINARY}/misheel-pro5`,
       `${CLOUDINARY}/misheel-pro6`,
+      `${CLOUDINARY}/misheel-pro7`,
+      `${CLOUDINARY}/misheel-pro8`,
+      `${CLOUDINARY}/misheel-pro9`,
+      `${CLOUDINARY}/misheel-pro10`,
+      `${CLOUDINARY}/misheel-pro11`,
     ],
   },
   {
@@ -62,6 +77,11 @@ const projects = [
       `${CLOUDINARY}/TheMongolKhan-3`,
       `${CLOUDINARY}/TheMongolKhan-4`,
       `${CLOUDINARY}/TheMongolKhan-5`,
+      `${CLOUDINARY}/TheMongolKhan-6`,
+      `${CLOUDINARY}/TheMongolKhan-7`,
+      `${CLOUDINARY}/TheMongolKhan-8`,
+      `${CLOUDINARY}/TheMongolKhan-9`,
+      `${CLOUDINARY}/TheMongolKhan-10`,
     ],
   },
 ]

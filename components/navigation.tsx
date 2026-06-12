@@ -9,10 +9,10 @@ const YOUTUBE_URL = "https://www.youtube.com/watch?v=tg8MFB48Pew"
 
 const navLinks = [
   { href: "#about", label: "Бидний тухай" },
-  { href: "#services", label: "үйлчилгээ" },
-  { href: "#projects", label: "төсөл" },
-  { href: "#capacity", label: "хүчин чадал" },
-  { href: "#why-us", label: "яагаад бид" },
+  { href: "#services", label: "Үйлчилгээ" },
+  { href: "#projects", label: "Төсөл" },
+  { href: "#capacity", label: "Хүчин чадал" },
+  { href: "#why-us", label: "Яагаад бид" },
 ]
 
 export function Navigation() {
