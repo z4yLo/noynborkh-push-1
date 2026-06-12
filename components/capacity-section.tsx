@@ -23,9 +23,9 @@ const capacities = [
   {
     icon: Ruler,
     value: "12м",
-    unit: "хамгийн их",
-    label: "үйлдвэрлэж чадах хамгийн урт ган хэсгийн хэмжээ",
-    description: "Нэг хэсэг үйлдвэрлэл",
+    label: " Нэг хэсэг үйлдвэрлэл",
+    unit: "хамгийн урт",
+    description: "үйлдвэрлэж чадах хамгийн урт ган хэсгийн хэмжээ",
   },
   {
     icon: Users,
@@ -37,13 +37,13 @@ const capacities = [
 ]
 
 const equipment = [
-  " Laser зүсэх систем",
-  "Автомат гагнуурын станц",
+  " Laser зүсэлт ",
   "Laser гагнуурын аппарат",
+  "Автомат гагнуурын аппарат",
+  "Шингэн будагийн камер",
   "Ган нугалах машин",
   "Нарийвчлалтай нугалах машин",
-  "Хуурай будагийн танхим ",
-  "Шингэн будагийн танхим",
+  "Хуурай будагийн камер (100-150°C)",
 ]
 
 export function CapacitySection() {
@@ -72,8 +72,8 @@ export function CapacitySection() {
             Үйлдвэрийн хүчин чадал
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-[#E8D9B5]/60">
-            Ямар ч хэмжээ, нарийн төвөгтэй төслийг хэрэгжүүлэх орчин үеийн 
-            тоног төхөөрөмжөөр тоноглосон дэвшилтэт үйлдвэр.
+           төслийг хэрэгжүүлэх орчин үеийн
+            тоног төхөөрөмжөөр тоноглосон үйлдвэр.
           </p>
         </motion.div>
 
@@ -90,7 +90,7 @@ export function CapacitySection() {
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center border border-[#C8A46B]/20 bg-[#C8A46B]/5">
                 <item.icon className="h-5 w-5 text-[#C8A46B]" />
               </div>
-              
+
               <div className="mb-2 flex items-baseline justify-center gap-1">
                 <span className="text-gradient-gold text-4xl font-bold">
                   {item.value}
@@ -101,7 +101,7 @@ export function CapacitySection() {
                   </span>
                 )}
               </div>
-              
+
               <div className="mb-1 text-sm font-medium text-[#E8D9B5]">
                 {item.label}
               </div>
@@ -120,9 +120,9 @@ export function CapacitySection() {
           className="border border-[#2B1B17] bg-gradient-to-br from-[#1B1412] to-[#111111] p-8 lg:p-12"
         >
           <h3 className="mb-8 text-center text-xl font-semibold text-[#E8D9B5]">
-            Дэвшилтэт тоног төхөөрөмж
+            Орчин үеийн тоног төхөөрөмж
           </h3>
-          
+
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {equipment.map((item, index) => (
               <motion.div

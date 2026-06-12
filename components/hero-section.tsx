@@ -72,7 +72,7 @@ export function HeroSection() {
           transition={{ duration: 1, delay: 0.6 }}
           className="mx-auto mb-12 max-w-2xl text-pretty text-lg font-light leading-relaxed text-[#E8D9B5]/70 sm:text-xl"
         >
-          Дээд зэрэглэлийн металл боловсруулалт ба аж үйлдвэрийн шийдэл
+          Метал интерьер хийцлэл - Чанар, Бат бөх, Дэгжин дизайн 
         </motion.p>
 
         <motion.div

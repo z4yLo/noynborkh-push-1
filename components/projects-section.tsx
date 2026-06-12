@@ -5,7 +5,7 @@ import { useRef, useState } from "react"
 import { ArrowUpRight } from "lucide-react"
 import { ProjectGalleryModal } from "./ProjectGalleryModal"
 
-const CLOUDINARY = "https://res.cloudinary.com/dnf4kmkrx/image/upload" 
+const CLOUDINARY = "https://res.cloudinary.com/dnf4kmkrx/image/upload"
 
 const projects = [
   {
@@ -111,14 +111,6 @@ export function ProjectsSection() {
               Онцлох төслүүд
             </h2>
           </div>
-
-          <a
-            href="#"
-            className="group flex items-center gap-2 text-sm font-light tracking-wide text-[#C8A46B] transition-colors hover:text-[#E8D9B5]"
-          >
-            Бүх төсөл харах
-            <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-          </a>
         </motion.div>
 
         {/* Projects Grid */}
